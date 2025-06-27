@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoFix - Reparación de Vehículos a Domicilio</title>
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+  <main>
+    <h1>AutoFix - Reparación de Vehículos a Domicilio</h1>
+
+    <section class="servicios">
+      <h2>Servicios y Precios</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="img/aceite.png" alt="Cambio de aceite">
+          <p><strong>Cambio de aceite</strong><br>Precio: $30.000 CLP</p>
+        </div>
+        <div class="card">
+          <img src="img/frenos.png" alt="Revisión de frenos">
+          <p><strong>Revisión de frenos</strong><br>Precio: $45.000 CLP</p>
+        </div>
+        <div class="card">
+          <img src="img/diagnostico.png" alt="Diagnóstico eléctrico">
+          <p><strong>Diagnóstico eléctrico</strong><br>Precio: $50.000 CLP</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h2>Solicitar Reparación</h2>
+      <form>
+        <label for="nombre">Nombre del Cliente</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="tipo">Tipo de Reparación</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecciona un servicio</option>
+          <option value="aceite">Cambio de aceite</option>
+          <option value="frenos">Revisión de frenos</option>
+          <option value="diagnostico">Diagnóstico eléctrico</option>
+        </select>
+
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+
+        <label for="fecha">Agendar Cita</label>
+        <input type="datetime-local" id="fecha" name="fecha" required>
+
+        <h3>Información de Pago (simulado)</h3>
+
+        <label for="tarjeta">Número de tarjeta</label>
+        <input type="text" id="tarjeta" placeholder="**** **** **** 1234">
+
+        <label for="titular">Nombre del titular</label>
+        <input type="text" id="titular">
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" maxlength="3">
+
+        <button type="submit">Confirmar Solicitud</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+
